@@ -3,6 +3,7 @@
 from tkinter import *
 
 root = Tk()
+root.configure(background="pink")
 
 
 def add_zero():
@@ -120,69 +121,69 @@ def plus_minus():
 
 display_result = StringVar()
 display = Entry(root, textvariable=display_result, justify="right")
-display.grid(row=2, column=1, columnspan=4)
+display.grid(row=2, column=1, columnspan=4, padx=5, pady=5)
+display.configure(background="light blue")
 
 
 title = Label(root, text="Calculator", font="Helvetica 20")
 title.grid(row=1, column=1, columnspan=4)
 
 clear_button = Button(root, text="Clear", width=4, font="Helvetica 16", command=clear)
-clear_button.grid(row=3, column=1)
+clear_button.grid(row=3, column=1, pady=5)
 
 plus_minus_button = Button(root, text="+/-", width=4, font="Helvetica 16", command=plus_minus)
-plus_minus_button.grid(row=3, column=2)
+plus_minus_button.grid(row=3, column=2, pady=5)
 
 percent_button = Button(root, text="%", width=4, font="Helvetica 16", command=percent)
-percent_button.grid(row=3, column=3)
+percent_button.grid(row=3, column=3, pady=5)
 
 divide_button = Button(root, text="/", width=4, font="Helvetica 16", command=divide)
-divide_button.grid(row=3, column=4)
+divide_button.grid(row=3, column=4, pady=5)
 
 seven_button = Button(root, text="7", width=4, font="Helvetica 16", command=add_seven)
-seven_button.grid(row=4, column=1)
+seven_button.grid(row=4, column=1, pady=5)
 
 eight_button = Button(root, text="8", width=4, font="Helvetica 16", command=add_eight)
-eight_button.grid(row=4, column=2)
+eight_button.grid(row=4, column=2, pady=5)
 
 nine_button = Button(root, text="9", width=4, font="Helvetica 16", command=add_nine)
-nine_button.grid(row=4, column=3)
+nine_button.grid(row=4, column=3, pady=5)
 
-multiply_button = Button(root, text="*", width=4, font="Helvetica 18", command=multiply)
-multiply_button.grid(row=4, column=4)
+multiply_button = Button(root, text="*", width=4, font="Helvetica 16", command=multiply)
+multiply_button.grid(row=4, column=4, pady=5)
 
 four_button = Button(root, text="4", width=4, font="Helvetica 16", command=add_four)
-four_button.grid(row=5, column=1)
+four_button.grid(row=5, column=1, pady=5)
 
 five_button = Button(root, text="5", width=4, font="Helvetica 16", command=add_five)
-five_button.grid(row=5, column=2)
+five_button.grid(row=5, column=2, pady=5)
 
 six_button = Button(root, text="6", width=4, font="Helvetica 16", command=add_six)
-six_button.grid(row=5, column=3)
+six_button.grid(row=5, column=3, pady=5)
 
 minus_button = Button(root, text="-", width=4, font="Helvetica 16", command=subtract)
-minus_button.grid(row=5, column=4)
+minus_button.grid(row=5, column=4, pady=5)
 
 one_button = Button(root, text="1", width=4, font="Helvetica 16", command=add_one)
-one_button.grid(row=6, column=1)
+one_button.grid(row=6, column=1, pady=5)
 
 two_button = Button(root, text="2", width=4, font="Helvetica 16", command=add_two)
-two_button.grid(row=6, column=2)
+two_button.grid(row=6, column=2, pady=5)
 
 three_button = Button(root, text="3", width=4, font="Helvetica 16", command=add_three)
-three_button.grid(row=6, column=3)
+three_button.grid(row=6, column=3, pady=5)
 
 plus_button = Button(root, text="+", width=4, font="Helvetica 16", command=add)
-plus_button.grid(row=6, column=4)
-
+plus_button.grid(row=6, column=4, pady=5)
 
 zero_button = Button(root, text="0", width=4, font="Helvetica 16", command=add_zero)
-zero_button.grid(row=7, column=1)
+zero_button.grid(row=7, column=1, pady=5)
 
 dot_button = Button(root, text=".", width=4, font="Helvetica 16", command=dot)
-dot_button.grid(row=7, column=2)
+dot_button.grid(row=7, column=2, pady=5)
 
 equal_button = Button(root, text="=", width=9, font="Helvetica 16", command=equal)
-equal_button.grid(row=7, column=3, columnspan=2)
+equal_button.grid(row=7, column=3, columnspan=2, pady=5)
 
 
 root.mainloop()
