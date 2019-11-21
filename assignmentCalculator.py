@@ -127,6 +127,7 @@ display.configure(background="light blue")
 
 title = Label(root, text="Calculator", font="Helvetica 20")
 title.grid(row=1, column=1, columnspan=4)
+title.configure(background="pink")
 
 clear_button = Button(root, text="Clear", width=4, font="Helvetica 16", command=clear)
 clear_button.grid(row=3, column=1, pady=5)
